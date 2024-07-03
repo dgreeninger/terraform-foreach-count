@@ -1,9 +1,7 @@
-terraform {
-  cloud {
-    organization = "dgreeninger"
+backend "remote" {
+  organization = "dgreeninger"
 
-    workspaces {
-      name = "foreach"
-    }
+  workspaces {
+    name = "foreach"
   }
 }
