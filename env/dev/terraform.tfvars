@@ -1,1 +1,1 @@
-deploy_random_pet = "true"
+deploy_random_pet = "false"
