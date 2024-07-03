@@ -13,7 +13,7 @@ provider "random" {}
 variable "pet_names" {
   description = "A list of pet names to generate"
   type        = list(string)
-  default     = ["pet1", "pet2", "pet3"]
+  default     = ["cat", "dog", "mouse"]
 }
 
 resource "random_pet" "foreach_pets" {

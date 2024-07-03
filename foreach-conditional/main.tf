@@ -1,9 +1,3 @@
-variable "deploy_random_pet" {
-  description = "Control whether to deploy the random_pet resource"
-  type        = bool
-  default     = true
-}
-
 resource "random_pet" "example" {
   for_each = var.deploy_random_pet ? { "example" = "example" } : {}
 
